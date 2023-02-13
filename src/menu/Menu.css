@@ -1,0 +1,15 @@
+.top {
+  font-size: 40px; background-color: gainsboro; padding: 10px;
+}
+
+.menuList {
+  font-size: 15px; list-style-type: none; float: right;
+}
+
+.menu {
+  display: inline; border-left: 1px solid; padding: 10px;
+}
+
+.menu:first-child {
+  border-left: none;
+}
