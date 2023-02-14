@@ -1,13 +1,14 @@
 import { Fragment } from 'react';
 import { Link, Route } from 'react-router-dom';
-import Board from './Board';
+import Board from './board/Board';
 import Bottom from './bottom/Bottom';
-import Course from './Course';
-import Login from './LogIn';
+import Login from './login/LogIn';
 import Main from './main/Main';
 import Menu from './menu/Menu';
-import MyPage from './MyPage';
+import MyPage from './myPage/MyPage';
 import './App.css';
+import Lecture from './lecture/Lecture';
+import AdminPage from './myPage/AdminPage';
 
 function App() {
   return (
@@ -17,11 +18,12 @@ function App() {
     </header>
     
     <section>
-      <Route path="/course" component={Course} />
+      <Route path="/lecture" component={Lecture} />
       <Route path="/login" component={Login} />
       <Route path="/board" component={Board} />
-      <Route path="/myPage" component={MyPage} />
-      <Route path="/main" component={Main} />
+      <Route path="/mypage" component={MyPage} />
+      <Route path="/doit" component={Main} />
+      <Route path="/adminpage" component={AdminPage} />
     </section>
     
     <footer>
