@@ -18,12 +18,12 @@ function App() {
     </header>
     
     <section>
-      <Route path="/lecture" component={Lecture} />
-      <Route path="/login" component={Login} />
-      <Route path="/board" component={Board} />
-      <Route path="/mypage" component={MyPage} />
-      <Route path="/doit" component={Main} />
-      <Route path="/adminpage" component={AdminPage} />
+      <Route path="/doit/lec" component={Lecture} />
+      <Route path="/doit/login" component={Login} />
+      <Route path="/doit/board" component={Board} />
+      <Route path="/doit/mypage" component={MyPage} />
+      <Route path="/doit" component={Main} exact={true} />
+      <Route path="/doit/adminpage" component={AdminPage} />
     </section>
     
     <footer>
