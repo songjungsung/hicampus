@@ -1,5 +1,11 @@
-section {
-    padding-bottom: 110px;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.contentWrapper {
+    flex: 1;
 }
 
 footer {
@@ -7,4 +13,5 @@ footer {
     height: 110px;
     bottom: 0px;
     position: absolute;
+    background-color: #59afae;
 }

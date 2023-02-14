@@ -12,24 +12,28 @@ import AdminPage from './myPage/AdminPage';
 
 function App() {
   return (
-   <>
-    <header>
-      <Menu />
-    </header>
+    <>
+      <header>
+        <Menu />
+      </header>
     
-    <section>
-      <Route path="/doit/lec" component={Lecture} />
-      <Route path="/doit/login" component={Login} />
-      <Route path="/doit/board" component={Board} />
-      <Route path="/doit/mypage" component={MyPage} />
-      <Route path="/doit" component={Main} exact={true} />
-      <Route path="/doit/adminpage" component={AdminPage} />
-    </section>
-    
-    <footer>
-      <Bottom />
-    </footer>
-   </>
+      <section >
+        <Route path="/doit" component={Main} exact={true} />
+        <Route path="/doit/lec" component={Lecture} />
+        <Route path="/doit/login" component={Login} />
+        <Route path="/doit/board" component={Board} />
+        <Route path="/doit/mypage" component={MyPage} />
+        <Route path="/doit/adminpage" component={AdminPage} />
+      </section>
+      
+
+      <footer>
+        <Bottom />
+      </footer>
+
+      <MyPage studentIdx={1} />
+      
+    </>
   );
 }
 

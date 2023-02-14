@@ -1,3 +1,5 @@
+import "./Bottom.css"
+
 const Bottom = () => {
     return (
     <div>
