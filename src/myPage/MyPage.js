@@ -3,35 +3,42 @@ import Calendar from './Calendar.js';
 import picture from './test.jpg'
 import './MyPage.css';
 import axios from 'axios';
+import TodoTemplate from './components/TodoTemplate';
+import TodoHead from './components/TodoHead';
+import TodoList from './components/TodoList';
 
-const MyPage = ({studentIdx}) => {
-    const [student, setStudent] = useState({});    
-    
-    useEffect(() => {
-        axios.get(`http://localhost:8080/doit/mypage/${studentIdx}`)
-             .then(response => {
-                console.log(response);
-                setStudent(response.data);
-             })
-             .catch(error => console.log(error));
-    }, {});
+const MyPage = () => {
 
     return (
     <>
-        <div>
-            <img className= 'image1' src={picture} ></img>
-            수강생 이름<input type='text' value={student.studentName} /><br/>
-            수강생 번호<input type='text' value={student.studentIdx} /><br/>
-            수강 강의<input type='text' value={student.studentLecture}/><br/>
-            핸드폰 번호<input type='text' value={student.studentContact}/>
+        <div className="student cf">
+            {/* 사진 출력  
+            <div className='image1'><img className= 'image2' src={picture} ></img></div> */}
+            <div className='student-info'>
+                <h2 style={{marginBottom: '30px'}}>수강생 정보</h2>
+                <div className="sutudent-name">
+                    <span>수강생 이름</span>
+                    <input type="text" />
+                </div>
+                <div className="sutudent-number">
+                    <span>수강생 번호</span>
+                    <input type="text" readOnly />
+                </div>
+                <div className="sutudent-sy">
+                    <span>수강 강의</span>
+                    <input type="text" readOnly/>
+                </div>
+                <div className="sutudent-ph">
+                    <span>핸드폰 번호</span>
+                    <input type="text" />
+                </div>
+                <button>수정하기</button>
+            </div>
         </div>
-        <button>출석하기</button>
-        <div>   
-            <Calendar />
-                총 출석일<input type='text' /><br/>
-                총 결석일<input type='text' /><br/>
-                훈련 장려금<input type='text' />  
-        </div>
+        <TodoTemplate>
+            <TodoHead/>
+            <TodoList/>
+        </TodoTemplate>
     </>
     );
 };

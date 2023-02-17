@@ -1,0 +1,28 @@
+.button {
+    background: #868e96;
+    outline: none;
+    border: none;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* background 속성을 0.1초에 걸처 서서히 변경 */
+    transition: 0.1s background ease-in;
+    float: right;
+}
+
+.button:hover {
+    background-color: #adb5bd;
+}
+
+.Attapply {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    justify-content: flex;
+    background-color: #495057;
+}

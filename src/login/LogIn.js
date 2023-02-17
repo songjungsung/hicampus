@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Login = () => {
     return (
     <>
@@ -6,7 +8,7 @@ const Login = () => {
     <input type="password" />
     <br/>
     <button>로그인</button>
-    <button>회원가입</button>
+    <button><Link to="/doit/newUser">회원가입</Link></button>
     </>
     );
 };

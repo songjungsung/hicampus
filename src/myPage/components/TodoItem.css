@@ -1,0 +1,81 @@
+.TodoItemBlock {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+
+.CheckCircle {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: 1px solid #ced4da;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.CheckCircle:hover {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+    
+.Text {
+    flex: 1;
+    font-size: 21px;
+    color: #495057;
+}
+.Text:hover {
+    color: #ced4da;
+}
+/* ---------------------------------------------- */
+.btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+  }
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+  }
+  
+  .bottom-primary {
+      color: #fff;
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+      position: absolute;
+      right: 20px;
+      
+    }
+  .bottom-primary:hover {
+      color: #fff;
+      background-color: #0b5ed7;
+      border-color: #0a58ca;
+      text-align: right;
+    }
+  
+  .btn-check:focus + .btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+  }
+  .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #0a58ca;
+    border-color: #0a53be;
+  }
+  .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+  }
+  .btn-primary:disabled, .btn-primary.disabled {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+  }

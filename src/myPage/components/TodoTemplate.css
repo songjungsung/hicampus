@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
+
+.TodoTemplate {
+    width: 768px;
+    height: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6rem;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 2px solid #000;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.04);
+    margin: 0 auto;
+    margin-top: 96px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.TodoTemplate .app-title {
+    background-color: #FDC300;
+    color: #000;
+    height: 4rem;
+    font-size: 1.5rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TodoTemplate .content {
+    background-color: white;
+}

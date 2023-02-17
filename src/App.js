@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { Link, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Board from './board/Board';
 import Bottom from './bottom/Bottom';
 import Login from './login/LogIn';
@@ -9,6 +9,7 @@ import MyPage from './myPage/MyPage';
 import './App.css';
 import Lecture from './lecture/Lecture';
 import AdminPage from './myPage/AdminPage';
+import Regist from './regist/Regist';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/doit" component={Main} exact={true} />
         <Route path="/doit/lec" component={Lecture} />
         <Route path="/doit/login" component={Login} />
+        <Route path="/doit/regist" component={Regist} />
         <Route path="/doit/board" component={Board} />
         <Route path="/doit/mypage" component={MyPage} />
         <Route path="/doit/adminpage" component={AdminPage} />
@@ -29,10 +31,7 @@ function App() {
 
       <footer>
         <Bottom />
-      </footer>
-
-      <MyPage studentIdx={1} />
-      
+      </footer>      
     </>
   );
 }
