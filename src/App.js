@@ -1,4 +1,3 @@
-import { Fragment } from 'react';
 import { Route } from 'react-router-dom';
 import Board from './board/Board';
 import Bottom from './bottom/Bottom';
@@ -8,8 +7,8 @@ import Menu from './menu/Menu';
 import MyPage from './myPage/MyPage';
 import './App.css';
 import Lecture from './lecture/Lecture';
-import AdminPage from './myPage/AdminPage';
 import Regist from './regist/Regist';
+import AdminPage from './adminPage/AdminPage';
 
 function App() {
   return (
